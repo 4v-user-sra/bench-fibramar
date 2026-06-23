@@ -1,0 +1,8 @@
+{
+  "name": "Benchmarking: Fibramar vs Settefibra",
+  "description": "Relatório comparativo de performance, destacando a projeção positiva e CPL eficiente da Fibramar frente à Settefibra.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
