@@ -253,23 +253,33 @@ export default function App() {
             <PresentationChart size={28} weight="fill" color="#FFF" />
           </div>
           <div>
-            <h1 className="text-2xl font-black tracking-tight text-gray-900 dark:text-white m-0 leading-none">Benchmarking Estratégico</h1>
-            <p className="text-gray-500 dark:text-[#AAA] text-sm mt-1 font-medium tracking-wide">FIBRAMAR | SETTEFIBRA | SISTEL | TELECAB</p>
+            <h1 className="text-2xl font-black tracking-tight text-gray-900 dark:text-white m-0 leading-none">Benchmark Fibramar</h1>
+            <p className="text-gray-500 dark:text-[#AAA] text-sm mt-2 font-medium tracking-wide">FIBRAMAR | SETTEFIBRA | SISTEL | TELECAB</p>
           </div>
         </div>
-        <div className="flex items-center gap-3">
-          <div className="px-3 py-1.5 rounded bg-gray-100 dark:bg-[#111] border border-gray-200 dark:border-[#333] text-xs font-bold text-gray-500 dark:text-[#AAA] tracking-widest flex items-center gap-2 transition-colors duration-300">
-            23 MAÍ - 21 JUN, 2026
+      <div className="flex items-center gap-4">
+        <button 
+          onClick={() => setIsDark(!isDark)}
+          className="relative flex items-center w-[88px] h-12 p-1.5 rounded-full bg-[#f1f5f9] dark:bg-[#0B0F19] border border-[#E31212] transition-colors focus:outline-none shadow-inner flex-shrink-0"
+          aria-label="Toggle Theme"
+        >
+          <motion.div 
+            className="absolute top-1.5 bottom-1.5 w-9 rounded-full bg-white dark:bg-[#1E293B] shadow-sm transform"
+            animate={{ left: isDark ? "41px" : "6px" }}
+            transition={{ type: "spring", stiffness: 400, damping: 30 }}
+          />
+          <div className="relative z-10 flex flex-1 items-center justify-center pointer-events-none">
+            <Sun size={22} className={!isDark ? "text-gray-900" : "text-gray-500"} weight={!isDark ? "bold" : "regular"} />
           </div>
-          <button 
-            onClick={() => setIsDark(!isDark)}
-            className="p-2 ml-2 rounded-full hover:bg-gray-200 dark:hover:bg-[#222] transition-colors text-gray-500 dark:text-gray-300 border border-gray-200 dark:border-[#333]"
-            title="Alternar Tema"
-          >
-            {isDark ? <Sun size={20} weight="bold" /> : <Moon size={20} weight="bold" />}
-          </button>
+          <div className="relative z-10 flex flex-1 items-center justify-center pointer-events-none">
+            <Moon size={22} className={isDark ? "text-blue-100" : "text-gray-400"} weight={isDark ? "bold" : "regular"} />
+          </div>
+        </button>
+        <div className="px-4 py-2 rounded bg-gray-100 dark:bg-[#111] border border-gray-200 dark:border-[#333] text-sm font-bold text-gray-500 dark:text-[#AAA] tracking-widest flex items-center gap-2 transition-colors duration-300">
+          23 MAÍ - 21 JUN, 2026
         </div>
-      </motion.header>
+      </div>
+    </motion.header>
 
       <main className="max-w-7xl mx-auto px-6 mt-12 space-y-24">
         
