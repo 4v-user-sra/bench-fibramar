@@ -873,6 +873,20 @@ export default function App() {
                     Se o cliente leva seis meses ou mais para se pagar e gerar lucro efetivo, o seu LTV médio sustenta esse intervalo perigosamente? E fundamental, o que exatamente torna essa margem unitária do cliente Fibramar tão baixa para que o *payback* leve tanto tempo?
                   </p>
                 </div>
+
+                <div className="bg-white/60 dark:bg-[#000]/40 backdrop-blur-sm p-6 rounded border border-gray-200 dark:border-[#333] hover:border-red-300 dark:hover:border-[#E31212]/50 transition-colors duration-300">
+                  <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">3. Conversão por Praça: Onde vendemos mais e onde estamos travados?</h4>
+                  <p className="text-gray-600 dark:text-[#999] text-[15px] leading-relaxed">
+                    Qual região está tendo bastante venda e quais não? Precisamos mapear as taxas de conversão de lead em venda (CR) por região para revisar as campanhas e ajustar a segmentação com otimizações precisas para cada praça.
+                  </p>
+                </div>
+
+                <div className="bg-white/60 dark:bg-[#000]/40 backdrop-blur-sm p-6 rounded border border-gray-200 dark:border-[#333] hover:border-red-300 dark:hover:border-[#E31212]/50 transition-colors duration-300">
+                  <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">4. Escala vs Expansão: Qual é o foco prioritário de crescimento?</h4>
+                  <p className="text-gray-600 dark:text-[#999] text-[15px] leading-relaxed">
+                    A ideia do projeto é escalar mais mídia nas regiões que já tem CPL baixo, eficiente e com público o bastante para atingir (penetração profunda), ou focar em expandir para novas regiões onde ainda não temos presença ou a presença é mais baixa (market share abrangente)?
+                  </p>
+                </div>
               </div>
             </div>
           </div>
